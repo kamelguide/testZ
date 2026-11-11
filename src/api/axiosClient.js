@@ -3,7 +3,7 @@ import { store } from "../redux/store";
 import { logout } from "../redux/authSlice";
 
 const axiosClient = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://exam-mern.onrender.com/api",
+  baseURL:  "https://exam-mern.onrender.com/api",
 });
 
 axiosClient.interceptors.request.use((config) => {
